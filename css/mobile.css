@@ -1,0 +1,91 @@
+#whatSection .items{
+    display: block;
+    padding: 1rem;
+}
+
+/* Align icon to left */
+#whatSection .items .item{
+    display: flex;
+
+    text-align: left;
+}
+
+/* Position Icon */
+#whatSection .items .item i{
+    align-self: center;
+
+    margin-right: 1.3rem;
+    margin-bottom: 0;
+}
+
+
+
+/* Smartphone */
+@media(max-width: 500px){
+    .L-heading{
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .M-heading{
+        font-size: 1.6rem;
+    }
+
+
+    #navbar{
+        flex-direction: column;
+
+        align-items: center;
+    }
+    #navbar .logoDiv{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+
+    #showcase .showcase-content{
+        margin-top: -3rem;
+    }
+
+
+    #infoSection{
+        display: block;
+    }
+    #infoSection .infoImg{
+        display: none;
+    }
+
+
+    #association .items img{
+        width: 100%;
+    }
+    #association .items div:nth-child(2){
+        display: none;
+    }
+    #association .container{
+        padding: 0 1rem;
+    }
+
+
+
+    #locationSection{
+        flex-direction: column;
+    }
+    #locationSection #map{
+        height: 200px;
+    }
+}
+
+
+
+@media(max-height: 568px){
+    #showcase .showcase-content{
+        margin-top: -2rem;
+    }
+    .L-heading{
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    #showcase .subtitle{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0.75rem 0;
+}
+
+/* Utility */
+.text-center{
+    text-align: center;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.greenSpan{
+    color: #93cb52;
+}
+.L-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.M-heading{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.padding-1{ padding: 1.5rem; }
+.padding-2{ padding: 2rem; }
+.padding-3{ padding: 3rem; }
+
+.paddingY-1{ padding: 1.5rem 0; }
+.paddingY-2{ padding: 2rem 0; }
+.paddingY-3{ padding: 3rem 0; }
+
+.subtitle{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+/* btn */
+.btn{
+    display: inline;
+    color: white;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn-green{
+    background-color: #93cb52;
+}
+.btn-green:hover{
+    background-color: #7ab436;
+}
+.btn-black{
+    color: white;
+    background-color: #333;
+}
+/* bg */
+.bg-light{
+    background-color: #f4f4f4;
+    color: #333;
+}
+.bg-dark{
+    background-color: #333;
+    color: white;
+}
+.bg-green{
+    background-color: #93cb52;
+}
+
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+
+/* Navbar */
+#navbar{
+    color: white;
+    background-color: #333;
+
+    padding: 1rem;
+
+    top: 0;
+    position: sticky;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+#navbar ul li a:hover{
+    background-color: #93cb52;
+    border-radius: 5px;
+}
+.logoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoDiv img{
+    height: 1.6rem;
+    margin: 0.2rem;
+}
+
+
+
+/* Showcase */
+#showcase{
+    background: #333 url('../src/stonehenge.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+}
+#showcase .showcase-content{
+    height: 100vh;
+    padding: 0 2rem;
+    
+    /* Flexbox property */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 0;
+}
+
+
+/* What Section */
+#whatSection .items{
+    display: flex;
+}
+#whatSection .items .item{
+    text-align: center;
+    padding: 1rem;
+
+    flex: 1;
+}
+#whatSection .items .item i{
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Info Section */
+#infoSection{
+    display: flex;
+}
+#infoSection div{
+    flex: 1;
+}
+#infoSection .infoImg{
+    background: url('../src/stonehenge_art.jpg') no-repeat center center/cover;
+}
+
+/* Associates Section */
+#association .items{
+    display: flex;
+}
+#association .items img{
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+
+/* Location Section */
+#locationSection{
+    display: flex;
+}
+#locationSection .locationForm{
+    flex: 1;
+}
+#locationSection .locationForm label{
+    display: block;
+}
+#locationSection .locationForm input,
+#locationSection .locationForm textarea{
+    width: 100%;
+    padding: 0.5rem;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/widescreen.css" media="screen and (min-width: 1000px)">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+    <link rel="icon" href="src/stonehenge_logo.ico" type="image/gif" sizes="16x16">
+    <title>StoneHenge | Rocks & Stones</title>
+</head>
+<body id="homeSection">
+    <!-- Navbar -->
+    <nav id="navbar">
+        <!-- <h1 class="logo"><span class="greenSpan"><i class="fab fa-first-order-alt"></i> Stone</span>Henge</h1> -->
+        <div class="logoDiv">
+            <img src="src/stonehenge_logo.ico">
+            <h1><span class="greenSpan">Stone</span>Henge</h1>
+        </div>
+        <ul>
+            <li><a href="#homeSection">Home</a></li>
+            <li><a href="#whatSection">What</a></li>
+            <li><a href="#infoSection">Info</a></li>
+            <li><a href="#locationSection">Location</a></li>
+        </ul>
+    </nav>
+
+    <!-- Showcase -->
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1 class="L-heading">Built in the time of <span class="greenSpan">Great Change</span></h1>
+            <p class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Expedita nemo dolor perspiciatis voluptatibus facilis dolores?
+            </p>
+            <a href="#whatSection" class="btn btn-green">Read More</a>
+        </div>
+    </header>
+
+    <!-- Section What -->
+    <section id="whatSection" class="bg-light paddingY-1">
+        <div class="container">
+            <h2 class="M-heading text-center"><span class="greenSpan">What</span> is StoneHenge</h2>
+            <div class="items">
+                <div class="item">
+                    <i class="fas fa-landmark"></i>
+                    <div>
+                        <h3>History</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nulla.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-theater-masks"></i>
+                    <div>
+                        <h3>Culture</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nulla.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <div>
+                        <h3>Visit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nulla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Info -->
+    <section id="infoSection">
+        <div class="infoImg"></div>
+        <div class="infoText bg-dark padding-2">
+            <h2 class="M-heading"><span class="greenSpan">Know the</span> StoneHenge</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci cum labore sint iure, ducimus quisquam.
+            </p>
+            <h3>Info</h3>
+            <ul class="list">
+                <li>Location: Wiltshire, England</li>
+                <li>Type: Monument</li>
+                <li>Material: Sarsen, Bluestone</li>
+                <li>Founded: Bronze Age</li>
+                <li>Ownership: The Crown</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Association Section -->
+    <section id="association" class="padding-1">
+        <div class="container">
+            <h2 class="M-heading text-center"><span class="greenSpan">Out</span> Associates</h2>
+            <div class="items">
+                <div><img src="/src/Bee.png" alt=""></div>
+                <div><img src="/src/Barbar.png" alt=""></div>
+                <div><img src="/src/teamOparthib.png" alt=""></div>
+                <div><img src="/src/GoldCalf.png" alt=""></div>
+                <div><img src="/src/StreetDreams.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="locationSection">
+        <div class="locationForm bg-green padding-2">
+            <h2 class="M-heading">Visit Now</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <form>
+                <div class="form-grp">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="nameInp" placeholder="Enter Name">
+                </div>
+                <div class="form-grp">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="emailInp" placeholder="Enter Email">
+                </div>
+                <div class="form-grp">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phoneInp" placeholder="Enter Phone Number">
+                </div>
+                <div class="form-grp">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="messageInp" placeholder="Enter Message"></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn btn-black">
+            </form>
+        </div>
+        <div id="map"></div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-center padding-1">
+        <div class="container">
+            <p>Copyright &copy; 2020, StoneHenge, All Rights Reserved</p>
+        </div>
+    </footer>
+
+ 
+    <!-- My Script -->
+    <script src="main.js"></script>
+
+    <!-- Google Map -->
+    <!-- Api Using Bananatree Account -->
+    <!-- AIzaSyCNG4DEBlME5KfmiAFIER-5MbUBS6rLpk0 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNG4DEBlME5KfmiAFIER-5MbUBS6rLpk0&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+</body>
+</html>

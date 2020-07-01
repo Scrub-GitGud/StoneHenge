@@ -1,0 +1,20 @@
+/* Align icon to left */
+#whatSection .items .item{
+    display: flex;
+
+    text-align: left;
+}
+
+/* Position Icon */
+#whatSection .items .item i{
+    align-self: center;
+
+    margin-right: 1.3rem;
+    margin-bottom: 0;
+}
+
+
+/* Make Map wide */
+#locationSection #map{
+    flex: 2;
+}
